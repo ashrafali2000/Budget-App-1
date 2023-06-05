@@ -1,0 +1,342 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 60px;
+}
+
+.expenseContainer {
+    background-color: rgb(30, 234, 162);
+    padding: 40px 50px 50px 50px;
+    box-shadow: 2px 2px 10px #777;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expenseContainer:hover {
+    background-color: rgb(203, 176, 86);
+    box-shadow: 2px 2px 10px #e9a047;
+    transition: 0.9s;
+}
+
+#addExpense {
+    width: 150px;
+    background-color: rgb(29, 129, 222);
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+#addExpense:hover {
+    background-color: rgb(128, 9, 9);
+}
+
+/* Budget Container */
+#budgetContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    box-shadow: 2px 2px 12px #777;
+    width: 200px;
+    height: 320px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(215, 210, 203);
+}
+
+#budgetContainer button {
+    background-color: rgb(29, 129, 222);
+    color: #fff;
+    padding: 9px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+#budgetContainer button:hover {
+    background-color: rgb(128, 9, 9);
+}
+
+#budgetContainer input {
+    height: 22px;
+}
+
+.expenseDetContainer {
+    text-align: center;
+    margin: 0px 250px 0px 250px;
+}
+
+.expenseHader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expensehader-1 {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.expensehader-2 {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.expenseDetContainer,
+.budgetDetContainer {
+    display: none;
+}
+
+#childForExpDet {
+    border: 1px solid rgb(9, 9, 9);
+    box-shadow: 2px 2px 12px;
+    text-align: center;
+    background-color: rgb(198, 220, 223);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.childForBudgDet {
+    background-color: rgb(135, 119, 123);
+    color: #fff;
+    margin: 20px 250px 0 250px;
+    padding: 10px 0 10px 0;
+    box-shadow: 2px 2px 12px #777;
+    display: none;
+}
+
+
+/* The following all class and tag selector for app.js file styling */
+/* Just for images */
+img {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(162, 234, 199);
+    padding: 7px;
+    border-radius: 70px;
+}
+
+.tableBorder {
+    border: none;
+    box-shadow: 2px 2px 9px red;
+    margin: 0 30px 0 30px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.forWidth {
+    width: 100px;
+    text-align: start;
+}
+
+.col1Class {
+    width: 40px;
+}
+
+.col2Class {
+    font-weight: bold;
+    font-size: 22px;
+    width: 150px
+}
+
+.col3Class {
+    width: 200px;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.col5Class {
+    width: 60px;
+    text-align: start;
+}
+
+.col6Class {
+    background-color: rgb(162, 20, 37);
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    width: 70px;
+}
+
+.col6Class:hover {
+    background-color: rgb(221, 8, 8);
+    color: #fff;
+}
+
+/* Calculation Container */
+.calculation {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(74, 74, 230);
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 50px 10px 50px;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+/*  Media queries */
+@media screen and (max-width:576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .expenseContainer {
+        background-color: rgb(30, 234, 162);
+        margin: -15px 30px 0px 30px;
+        box-shadow: 2px 2px 10px #777;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #date,
+    #Category,
+    #amount,
+    #description,
+    #budget {
+        width: 170px;
+    }
+
+    #budgetContainer {
+        border: 1px solid;
+        box-shadow: 2px 2px 12px #6b6666;
+        width: 218px;
+        height: 190px;
+        padding-left: 40px;
+        background-color: rgb(215, 210, 203);
+    }
+
+    #budgetContainer button {
+        margin-top: 4px;
+    }
+
+    .expenseDetContainer {
+        text-align: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .expenseHader {
+        font-size: 12px;
+    }
+
+    .tableBorder {
+        border: none;
+        box-shadow: 2px 2px 9px red;
+        margin: 0 10px 0 10px;
+        border-radius: 30px;
+        background-color: #fff;
+        display: flex;
+        border-spacing: 10px;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forWidth {
+        width: 30px;
+        text-align: start;
+        /* word-break: break-all;  */
+    }
+
+    .col1Class {
+        width: 30px;
+    }
+
+    .col2Class {
+        font-weight: bold;
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .col3Class {
+        text-align: start;
+        width: 497px;
+        font-size: 12px;
+        word-break: break-all;
+    }
+
+    .col4Class {
+        font-size: 12px;
+    }
+
+    .col5Class {
+        width: 30px;
+        text-align: start;
+        font-size: 12px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(200, 242, 242);
+        padding: 5px;
+        border-radius: 70px;
+    }
+
+    #childForExpDet {
+        border: 1px solid rgb(9, 9, 9);
+        box-shadow: 2px 2px 12px;
+        text-align: center;
+        background-color: rgb(179, 210, 211);
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+    }
+
+    .col6Class {
+        background-color: rgb(162, 20, 37);
+        color: #fff;
+        text-align: center;
+        border-radius: 50px;
+        width: 35px;
+        font-size: 12px;
+        height: 10px;
+    }
+
+    .childForBudgDet {
+        background-color: rgb(135, 119, 123);
+        color: #fff;
+        margin: 20px 20px 0 20px;
+        padding: 5px 0 5px 0;
+        box-shadow: 2px 2px 12px #777;
+        display: none;
+    }
+
+    .calculation {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(74, 74, 230);
+        color: #fff;
+        /* font-weight: 500; */
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 30px;
+    }
+}

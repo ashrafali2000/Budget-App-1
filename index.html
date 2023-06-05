@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget-App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;font-size: 50px; " id="firstBudget">Budget <span style="color: red;"> App</span></h1>
+
+    <!-- Main App Container -->
+    <div class="mainContainer">
+
+        <!-- Expense container -->
+        <div class="expenseContainer">
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="$">
+            </div>
+            <div>
+                <label for="Category">Category:</label>
+                <select name="category" id="Category">
+                </select>
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <input type="text" id="description" maxlength="30">
+            </div>
+
+            <button onclick="addExpense()" id="addExpense">Add Expense</button>
+        </div>
+
+        <!-- Budget Container -->
+        <div id="budgetContainer">
+            <h3>Budget</h3>
+            <input type="text" name="" id="budget" placeholder="Enter Total Amount"><br>
+            <button onclick=" AddBudgetAll()">Add Budget</button>
+        </div>
+    </div>
+
+    <!-- Expensive Detaile Container -->
+    <div class="expenseDetContainer">
+        <h1>Expensive Details:</h1>
+        <div class="expenseHader">
+            <div class="expensehader-1">
+                <p>Category Type</p>
+                <p>Description</p>
+            </div>
+            <div class="expensehader-2">
+                <p>Date</p>
+                <p>Amount</p>
+                <p>Expense Items : <span id="calcOfItem"></span></p>
+            </div>
+        </div>
+        <div id="childForExpDet">
+
+        </div>
+    </div>
+
+    <!-- Budget Detail Container -->
+    <div class="budgetDetContainer">
+        <h1 style="text-align: center;">Overview Amount:</h1>
+        <div class="childForBudgDet">
+
+        </div>
+    </div>
+</body>
+
+</html>
